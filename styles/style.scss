@@ -1,0 +1,111 @@
+$black: #000000;
+$black2: #666666;
+$yellow: #f3b600;
+$gray: #f1f2f8;
+$white: #ffffff;
+$gray2: #a4a4a4;
+
+body {
+  max-width: 1366px;
+  font-family: "PT Serif";
+  margin: 0 auto;
+  .container {
+    margin: 107px 134px;
+    .header {
+      display: flex;
+      margin-top: 100px;
+      .tab {
+        color: $black2;
+        font-weight: 400;
+        font-size: 13px;
+      }
+      .tab-space {
+        color: $black2;
+        margin: 0 35px;
+      }
+    }
+    .name-article {
+      font-weight: 700;
+      font-size: 29px;
+      color: $black;
+      margin: 48px 0 50px 0;
+    }
+    .content-article {
+      .title {
+        font-weight: 400;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $black2;
+      }
+      .title-sub {
+        font-weight: 700;
+        font-size: 18px;
+        color: $black2;
+        margin: 25px 0 14px 0;
+      }
+      .text-content {
+        .line-content {
+          font-weight: 400;
+          font-size: 16px;
+          color: $black2;
+          margin: 0;
+          .line-sub {
+            display: flex;
+            align-items: center;
+            margin: 0 0 10px 10px;
+            .circle-content {
+              height: 8px;
+              width: 8px;
+              background-color: $yellow;
+              border-radius: 50%;
+              -moz-border-radius: 50%;
+              -webkit-border-radius: 50%;
+              margin-right: 7px;
+            }
+          }
+          .three-year {
+            .tab-year {
+              display: flex;
+              border: 1px solid $gray2;
+              .tab-year-sub {
+                width: 33.33%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 18px 0;
+                background-color: $gray;
+                font-weight: 400;
+                font-size: 20px;
+                color: $black;
+                font-family: "Montserrat";
+              }
+              .tab-year-two {
+                margin: 0 1px;
+              }
+              .tab-year-active {
+                margin-top: -1px;
+                border-top: 5px solid $yellow;
+                background-color: $white;
+              }
+            }
+            .year-one {
+              .title-tab-year {
+              }
+              .line-content {
+                .line-sub {
+                  .line-sub-title {
+                  }
+                  .line-sub-content {
+                  }
+                }
+              }
+            }
+          }
+        }
+        .line-content:not(:last-child) {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+}
