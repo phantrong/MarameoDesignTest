@@ -181,7 +181,7 @@
                 </div>
                 <div class="tab-year-content" id="tab-year-content-2">
                   <div class="title-tab-year">
-                    diplomas are only 1 year so need to be able to have option
+                    diplomas are only 2 year so need to be able to have option
                     for one year
                   </div>
                   <div class="line-content">
@@ -259,7 +259,7 @@
                 </div>
                 <div class="tab-year-content" id="tab-year-content-3">
                   <div class="title-tab-year">
-                    diplomas are only 1 year so need to be able to have option
+                    diplomas are only 3 year so need to be able to have option
                     for one year
                   </div>
                   <div class="line-content">
@@ -395,9 +395,34 @@
                 <img src="/images/scholarship.svg" alt="Fees" />Fees
               </div>
               <div class="content-advertise">
-                3 years full-time (part-time options available)
+                <div class="line-sub-advertise">
+                  <div class="line-sub-advertise-title">
+                    <img
+                      src="/images/right-arrow.svg"
+                      alt="right-arrow"
+                    />Domestic
+                  </div>
+                  <div class="line-sub-advertise-option">
+                    details of Student Loans
+                  </div>
+                </div>
+                <div class="line-sub-advertise">
+                  <div class="line-sub-advertise-title">
+                    <img
+                      src="/images/right-arrow.svg"
+                      alt="right-arrow"
+                    />International
+                  </div>
+                  <div class="line-sub-advertise-option">Scholarships</div>
+                  <div class="line-sub-advertise-note">
+                    Note fees are in NZD and include GST.
+                  </div>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="btn-advertise">
+            <button>Start Now</button>
           </div>
         </div>
       </div>
@@ -457,4 +482,48 @@
       </div>
     </div>
   </body>
+  <script>
+    document.getElementById("tab-year-1").onclick = function () {
+      document.getElementById("tab-year-2").classList.remove("tab-year-active");
+      document.getElementById("tab-year-3").classList.remove("tab-year-active");
+      document.getElementById("tab-year-1").classList.add("tab-year-active");
+      document
+        .getElementById("tab-year-content-2")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-3")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-1")
+        .classList.add("tab-year-content-active");
+    };
+    document.getElementById("tab-year-2").onclick = function () {
+      document.getElementById("tab-year-1").classList.remove("tab-year-active");
+      document.getElementById("tab-year-3").classList.remove("tab-year-active");
+      document.getElementById("tab-year-2").classList.add("tab-year-active");
+      document
+        .getElementById("tab-year-content-1")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-3")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-2")
+        .classList.add("tab-year-content-active");
+    };
+    document.getElementById("tab-year-3").onclick = function () {
+      document.getElementById("tab-year-1").classList.remove("tab-year-active");
+      document.getElementById("tab-year-2").classList.remove("tab-year-active");
+      document.getElementById("tab-year-3").classList.add("tab-year-active");
+      document
+        .getElementById("tab-year-content-1")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-2")
+        .classList.remove("tab-year-content-active");
+      document
+        .getElementById("tab-year-content-3")
+        .classList.add("tab-year-content-active");
+    };
+  </script>
 </html>
